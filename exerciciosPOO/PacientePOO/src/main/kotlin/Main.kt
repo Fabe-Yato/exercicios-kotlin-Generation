@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
 
     println("Digite o nome de um parente: ")
     val parentesco = readln()
-    val paciente1 = Paciente(nome, anoNascimento, parentesco, "Rua dos DEVS", 72.5, 1.70)
+    val paciente1 = Paciente(nome, anoNascimento, parentesco, "Rua dos DEVS", 500.0, 1550.0)
 
     println("Confirme suas informações: \n" +
             "Nome: ${paciente1.nome} \n" +
@@ -18,6 +18,6 @@ fun main(args: Array<String>) {
     println("Peso: ${paciente1.peso} \n" +
             "Altura: ${paciente1.altura} \n"
     )
-    paciente1.calcularIMC()
+    paciente1.calcularIMC(paciente1.peso, paciente1.altura)
 
 }
